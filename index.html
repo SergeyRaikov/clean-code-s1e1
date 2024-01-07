@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -27,14 +27,14 @@
           <li class="incomplete-tasks__item">
               <input class="chek-item" type="checkbox">
               <label class="task">Pay Bills</label>
-              <input class="task-input" type="text">
+              <input class="task-input hidden" type="text">
               <button class="button button__edit-item">Edit</button>
               <button class="button button__delete-item"><img class="delet-icon" src="./remove.svg" alt="remove icon image"></button>
           </li>
-          <li class="edit-mode__item">
+          <li class="incomplete-tasks__item edit-mode">
            <input class="chek-item" type="checkbox">
-           <label class="task">Go Shopping</label>
-           <input class="task-input" type="text" value="Go Shopping">
+           <label class="task hidden">Go Shopping</label>
+           <input class="task-input visible new-task-input " type="text" value="Go Shopping">
            <button class="button button__edit-item">Save</button>
            <button class="button button__delete-item"><img class="delet-icon" src="./remove.svg" alt="remove icon image"></button>
           </li>
@@ -44,14 +44,14 @@
           <li class="completed-tasks__item">
               <input class="chek-item" type="checkbox" checked>
               <label class="task">See the Doctor</label>
-              <input class="task-input" type="text">
+              <input class="task-input hidden" type="text">
               <button class="button button__edit-item">Edit</button>
               <button class="button button__delete-item"><img class="delet-icon" src="./remove.svg" alt="remove icon image"></button>
           </li>
       </ul>
     </main>
 
-  <script type="text/javascript" src="app.js"></script>
+  <script src="./app.js"></script>
 
 </body>
 
