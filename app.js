@@ -12,7 +12,7 @@ var createNewTaskElement = function (taskString) {
   checkBox.classList.add('chek-item');
 
   var label = document.createElement('label'); //label
-  label.classList.add('task');
+  label.classList.add('task', 'visible');
 
   var editInput = document.createElement('input'); //text
   editInput.type = 'text';
